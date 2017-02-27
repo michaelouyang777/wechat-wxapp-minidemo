@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFCC00",
+    "navigationBarTitleText": "上拉加载",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh": false
+  }
+}
