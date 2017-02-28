@@ -1,0 +1,1 @@
+![](https://github.com/michaelouyang777/wechat-wxapp-minidemo/blob/master/demoinfo/demo--%E8%BD%AE%E6%92%AD%E5%9B%BE.gif?raw=true)
