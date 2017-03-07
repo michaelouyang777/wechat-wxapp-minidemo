@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#21293E",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  }
+}

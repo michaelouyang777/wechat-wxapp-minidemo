@@ -1,14 +1,20 @@
 //app.js
 App({
+
   onLaunch: function () {
+    var that = this
+    wx.getSystemInfo({  
+    success: function (res) { 
+      that.globalData.screenWidth = res.windowWidth;  
+      that.globalData.screenHight = res.windowHeight; 
+      that.globalData.screenWidthScale = res.windowWidth/750;  
+      that.globalData.screenHightScale = res.windowHeight/1334;
+    }
+    })
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
-    // wx.redirectTo({
-    //   url: '../pages/playsong/playsong'
-    // });
   },
   getUserInfo:function(cb){
     var that = this
@@ -28,14 +34,11 @@ App({
       })
     }
   },
-  setGlobalData: function(obj){
-    for(let n in obj){
-      this.globalData[n] = obj[n];
-    }
-  },
   globalData:{
-    userInfo: null,
-    topListId: '',
-    songData: null,
+    userInfo:null,
+    screenWidthScale:0.0,
+    screenHightScale:0.0,
+    screenWidth:0,
+    screenHight:0
   }
 })
